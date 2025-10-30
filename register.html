@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kayıt - Hasan</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="top">
+  <h1>Kayıt Ol</h1>
+  <nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="codes.html">Kodlar</a>
+    <a href="login.html">Giriş</a>
+    <a href="about.html">Hakkında</a>
+  </nav>
+</header>
+<main class="container">
+  <section class="card">
+    <form id="registerForm">
+      <label>Kullanıcı Adı<input id="regUser" required></label>
+      <label>Şifre<input id="regPass" type="password" required></label>
+      <div class="row">
+        <button type="submit" class="button">Kayıt Ol</button>
+        <a class="button ghost" href="login.html">Zaten Hesabım Var</a>
+      </div>
+      <p id="regMsg" class="muted"></p>
+    </form>
+  </section>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>

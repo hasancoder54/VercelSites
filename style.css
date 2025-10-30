@@ -1,0 +1,29 @@
+/* Dark theme simple CSS */
+:root{
+  --bg:#0b0f13;
+  --card:#0f1720;
+  --muted:#9aa4b2;
+  --accent:#6ee7b7;
+  --text:#e6eef6;
+  --danger:#ff6666;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#071018);color:var(--text);min-height:100vh}
+.top{padding:18px 20px;display:flex;align-items:center;justify-content:space-between;background:var(--card);border-bottom:1px solid rgba(255,255,255,0.03)}
+.top h1{margin:0;font-size:18px}
+nav a{color:var(--muted);margin-left:12px;text-decoration:none;font-size:14px}
+.container{padding:20px;max-width:980px;margin:28px auto;display:grid;grid-template-columns:1fr;gap:18px}
+.card{background:var(--glass);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.02)}
+.button{background:linear-gradient(90deg,var(--accent),#48cfa0);color:#042022;border:none;padding:10px 14px;border-radius:8px;cursor:pointer;text-decoration:none;display:inline-block}
+.button.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 12px}
+label{display:block;margin:8px 0;font-size:14px}
+input, textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text);resize:vertical}
+.row{display:flex;gap:10px;align-items:center;margin-top:10px}
+.muted{color:var(--muted);font-size:13px}
+.code-block{background:#021018;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.02);white-space:pre-wrap;font-family:monospace;font-size:13px}
+.small{font-size:13px;color:var(--muted)}
+.footer{padding:20px;text-align:center;color:var(--muted)}
+.user-chip{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.02);font-size:13px;margin-right:6px}
+.btn-small{padding:6px 8px;border-radius:6px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+`
